@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desktop-excel-cleaner"
+version = "0.1.0"
+description = "Read desktop Excel files, clean data, and export CSV on Windows 11."
+requires-python = ">=3.10"
+dependencies = ["openpyxl>=3.1,<4.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
